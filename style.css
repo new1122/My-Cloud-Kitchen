@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 16%;
+    background-color: rgb(94, 252, 199);
+    position: fixed;
+    width: 100%;
+}
+.mainlogo{
+    margin-left: 35px;
+    position: absolute;
+    height: 160px;
+    width: 175px;
+    border-radius: 100%;
+}
+.mainhead{
+    font-size: 26px;
+    color: rgb(55, 5, 235);
+    font-weight: 600;
+    font-family:cursive;
+    margin-top: 5%;
+    margin-left: 16%;
+    position: absolute;
+}
+.nav1{
+    margin-left: 72%;
+}
+.nav1 ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.nav1 li{
+    margin: 20px;
+    text-decoration: none;
+}
+nav{
+    margin-top: -1%;
+    margin-left: 47%;
+}
+nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.navi{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+.navi:hover{
+    text-decoration: none;
+    color: rgb(248, 11, 11);
+    margin: 20px;
+    font-size: 18px;
+}
+.nav3{
+    position: absolute;
+    right: 10px;
+}
+.insta{
+    height: 30px;
+    width: 30px;
+}
+.container{
+    margin-top: 11%;
+    margin-left: 3%;
+    position: absolute;
+    border: 1px solid black;
+    height: 68%;
+    width: 76%;
+    overflow: auto;
+}
+.box{
+    background-color: rgb(192, 209, 192);
+    width:auto;
+    margin: 5px 5px 5px 5px;
+    height: 45%;
+    display: flex;
+  
+}
+
+.lable{
+    color: rgb(255, 0, 0);
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
+table{
+    /* border: 1px solid black; */
+}
+.imagesview{
+    height: 70%;
+    width: 70%;
+}
+
+.mybutton{
+    width: 100px;
+    border-radius: 10%;
+    background-color: rgb(41, 197, 145);
+    color: rgb(204, 255, 0);
+    font: bolder;
+    font-size: 15px;
+}
+
+.billingbox{
+    margin-top: 11%;
+    margin-left: 80%;
+    position: absolute;
+    border: 1px solid black;
+    height: 68%;
+    width: 18%;
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(94, 252, 199);
+    height: 6%;
+    font-size: 18px;
+    padding-top: 2%;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 4.5%;
+    width: 100%;
+    background-color: rgb(94, 252, 199);
+    color: rgb(3, 3, 3);
+    text-align: center;
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 500px) {
+    .header{
+        height: 7%;
+        background-color: rgb(94, 252, 199);
+        position: fixed;
+        width: 100%;
+    }
+    .mainlogo{
+        margin-left: 35px;
+        position: absolute;
+        height: 80px;
+        width: 95px;
+        border-radius: 100%;
+    }
+    .mainhead{
+        font-size: 16px;
+        color: rgb(55, 5, 235);
+        font-weight: 600;
+        font-style:cursive;
+        margin-top: 5%;
+        margin-left: 27%;
+        position: absolute;
+    }
+    .nav1{
+      display: none;
+    }
+
+    nav{
+        display: none;
+    }
+    .nav3{
+        display: none;
+    }
+
+
+
+    .container{
+        margin-top: 22%;
+        margin-left: 3%;
+        position: absolute;
+        border: 1px solid black;
+        height: 68%;
+        width: 72%;
+        overflow: auto;
+    }
+    .billingbox{
+        margin-top: 22%;
+        margin-left: 76%;
+        position: absolute;
+        border: 1px solid black;
+        height: 68%;
+        width: 16%;
+    }
+}
