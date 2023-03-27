@@ -58,7 +58,8 @@ nav ul{
 }
 .nav3{
     position: absolute;
-    right: 10px;
+    right: 30px;  
+    margin-top: -1%;
 }
 .insta{
     height: 30px;
@@ -132,6 +133,29 @@ table{
     color: rgb(3, 3, 3);
     text-align: center;
   }
+  .shop{
+    display: none;
+    height: 10%;
+    width: 10%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -140,55 +164,104 @@ table{
 
   @media screen and (max-width: 500px) {
     .header{
-        height: 7%;
+        height: 11%;
         background-color: rgb(94, 252, 199);
         position: fixed;
         width: 100%;
     }
     .mainlogo{
-        margin-left: 35px;
+        margin-left: 7%;
         position: absolute;
-        height: 80px;
-        width: 95px;
+        height: 135%;
+        width: 25%;
+        margin-top: 2%;
         border-radius: 100%;
     }
     .mainhead{
-        font-size: 16px;
+        font-size: 18px;
         color: rgb(55, 5, 235);
         font-weight: 600;
-        font-style:cursive;
-        margin-top: 5%;
-        margin-left: 27%;
+        font-family:cursive;
+        margin-top: 8%;
+        margin-left: 30%;
         position: absolute;
     }
     .nav1{
-      display: none;
+        display: none;
     }
-
+    .nav1 ul{
+        display: none;
+    }
+    .nav1 li{
+        display: none;
+    }
     nav{
         display: none;
     }
-    .nav3{
+    nav ul{
         display: none;
     }
-
-
-
+    .navi{
+        display: none;
+    }
+    .navi:hover{
+        display: none;
+    }
+    .nav3{
+       
+    }
+    .number{
+        display: none;
+    }
+    .insta{
+        display: none;
+    }
     .container{
-        margin-top: 22%;
-        margin-left: 3%;
-        position: absolute;
-        border: 1px solid black;
-        height: 68%;
-        width: 72%;
-        overflow: auto;
+        position:absolute;
+      margin-top: 24%;
+      width: 95%;
     }
+    .box{
+        background-color: rgb(192, 209, 192);
+        height: 100%;
+        width: 48%;
+        display:inline-block;
+        scroll-behavior: auto;
+        margin: 2px 2px 2px 2px;      
+    }
+    
+    .lable{
+       
+    }
+    
+    
+    table{
+       
+    }
+    .imagesview{
+    
+    }
+    
+    .mybutton{
+        display: none;
+    }
+    
     .billingbox{
-        margin-top: 22%;
-        margin-left: 76%;
-        position: absolute;
-        border: 1px solid black;
-        height: 68%;
-        width: 16%;
+        display: none;
     }
+    .heading{
+        display: none;
+    }
+    .footer {
+        display: none;
+      }
+      .shop{
+        visibility: visible;
+        display:block;
+        position: fixed;
+        right: 1.9%;
+        top: 3.9%;
+        height: 4%;
+        width: 5.5%;
+      }
 }
