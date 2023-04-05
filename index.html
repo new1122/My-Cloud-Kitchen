@@ -31,13 +31,49 @@
     
     <div class="nav3">
        <img src="shop.png" class="shop" alt="">
+       
         <div class="number">Feel Free to contact us on :  +91 99999 99999</div>
     </ul>
     </div>
 </div>
-
+<!--  --------------------  ----------  For Desktop ----------  -----------------  -->
 <div class="container">
+    <div class="maincont">
+       
+        <div class="lable1">PIZZA SECTION</div>
 
+        <div class="box1">A</div>
+        <div class="box1">B</div>
+        <div class="box1">C</div>
+        <div class="box1">D</div>
+        <div class="box1">E</div>
+
+        <div class="lable1">DOSA SECTION</div>
+
+        <div class="box1">A</div>
+        <div class="box1">B</div>
+        <div class="box1">C</div>
+        <div class="box1">D</div>
+        <div class="box1">E</div>
+
+        <div class="lable1">SANDWICH SECTION</div>
+
+        <div class="box1">A</div>
+        <div class="box1">B</div>
+        <div class="box1">C</div>
+        <div class="box1">D</div>
+        <div class="box1">E</div>
+
+        <div class="lable1">VADAPAV SECTION</div>
+
+        <div class="box1">A</div>
+        <div class="box1">B</div>
+        <div class="box1">C</div>
+        <div class="box1">D</div>
+        <div class="box1">E</div>
+    </div>
+
+    
     <div class="box">
     <p class="lable"><u> Pizza</u></p>  
 
@@ -119,7 +155,7 @@
     </div>
 </div>
 
-<div class="billingbox">
+<div id="billingbox">
    <div class="heading"><b><u>Your Cart</u></b></div>
    <table>
     <th>
@@ -129,8 +165,6 @@
         <td>Quantity</td>
     </tr>
     </th>
- 
-
 <!-- for pizza -->
         <tr class="rows">
             <td><p><input type="text"  style="border:none; width:100%" id="field2" readonly></p></td>
@@ -174,13 +208,8 @@
             <td> <p><input type="text" style="border:none; width:100%;" id="field20" readonly></p></td>
             <td> <p><input type="text" style="border:none; width:30%;" id="field21" readonly></p></td>
         </tr>  
-
-
         <tr>
-
         </tr>
-
-
         <tr></tr>
         <tr></tr>
         <tr>
@@ -199,9 +228,12 @@
        
    </table>
    
-    
-   
 </div>
+
+
+
+   <!--  ------------------    For Mobile --------------------       -->
+   
 
 <div class="footer">
     This is developed by Kalpana Acharya.
@@ -271,10 +303,7 @@
         g=Number(document.getElementById("field15").value);
         h=Number(document.getElementById("field17").value);
         i=Number(document.getElementById("field19").value);
-        j=Number(document.getElementById("field21").value);
-      
-
-        
+        j=Number(document.getElementById("field21").value);       
         k= a + b + c + d + e + f + g + h + i + j;
         document.getElementById("grandtotal1").innerHTML = k;
     }
