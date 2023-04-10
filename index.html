@@ -30,7 +30,7 @@
     </nav>
     
     <div class="nav3">
-       <img src="shop.png" class="shop" id="myBtn" onclick="total()" alt="">
+      <button onclick="total()"><img src="shop.png" class="shop" id="myBtn" alt=""></button>
        
         <div class="number">Feel Free to contact us on :  +91 99999 99999</div>
     </ul>
@@ -53,29 +53,31 @@
               </tr>
             </th>
             <tr class="rows">
-              <td><p><input type="text"  style="border:none; width:100%" id="field2" readonly></p></td>
-              <td> <p><input type="text" style="border:none; width:30%;" id="field3" readonly></p></td>
+              <td><p><input type="text"  style="border:none; width:100%" id="field22" readonly></p></td>
+              <td> <p><input type="text" style="border:none; width:30%;" id="field23" readonly></p></td>
           </tr>
           <tr class="rows">
-            <td><p><input type="text"  style="border:none; width:100%" id="field4" readonly></p></td>
-            <td> <p><input type="text" style="border:none; width:30%;" id="field5" readonly></p></td>
+            <td><p><input type="text"  style="border:none; width:100%" id="field24" readonly></p></td>
+            <td> <p><input type="text" style="border:none; width:30%;" id="field25" readonly></p></td>
         </tr>
         <tr class="rows">
-          <td><p><input type="text"  style="border:none; width:100%" id="field6" readonly></p></td>
-          <td> <p><input type="text" style="border:none; width:30%;" id="field7" readonly></p></td>
+          <td><p><input type="text"  style="border:none; width:100%" id="field26" readonly></p></td>
+          <td> <p><input type="text" style="border:none; width:30%;" id="field27" readonly></p></td>
       </tr>
       <tr class="rows">
-        <td><p><input type="text"  style="border:none; width:100%" id="field8" readonly></p></td>
-        <td> <p><input type="text" style="border:none; width:30%;" id="field9" readonly></p></td>
+        <td><p><input type="text"  style="border:none; width:100%" id="field28" readonly></p></td>
+        <td> <p><input type="text" style="border:none; width:30%;" id="field29" readonly></p></td>
     </tr>
     <tr class="rows">
-      <td><p><input type="text"  style="border:none; width:100%" id="field10" readonly></p></td>
-      <td> <p><input type="text" style="border:none; width:30%;" id="field11" readonly></p></td>
-  </tr>
-
+      <td><p><input type="text"  style="border:none; width:100%" id="field30" readonly></p></td>
+      <td> <p><input type="text" style="border:none; width:30%;" id="field31" readonly></p></td>
+   </tr>
+          <tr>
            <td>Grand Total</td>
-            <td><p id="grandtotal1"></p></td>
-          </table>
+            <td><p id="grandtotalmob" readonly></p></td>
+          </tr>
+        
+  </table>
         </div>
       
       </div>
@@ -382,36 +384,7 @@ window.onclick = function(event) {
         document.getElementById("field20").value = document.getElementById("gdosa").textContent;
         document.getElementById("field21").value = document.getElementById("gdosaprice").textContent;
       }
-
-
-
-
-
-
-      function myFunction10() {
-      document.getElementById("field2").value = document.getElementById("cheesepizza").textContent;
-      document.getElementById("field3").value = document.getElementById("cheeseprice").textContent;
-    }
-    function myFunction11() {
-      document.getElementById("field4").value = document.getElementById("margeritapizza").textContent;
-      document.getElementById("field5").value = document.getElementById("margeritaprice").textContent;
-    }
-    function myFunction12() {
-      document.getElementById("field6").value = document.getElementById("vegpizza").textContent;
-      document.getElementById("field7").value = document.getElementById("vegprice").textContent;
-    }
-    function myFunction13() {
-      document.getElementById("field8").value = document.getElementById("pastapizza").textContent;
-      document.getElementById("field9").value = document.getElementById("pastaprise").textContent;
-    }
-    function myFunction14() {
-      document.getElementById("field10").value = document.getElementById("07cheesepizza").textContent;
-      document.getElementById("field11").value = document.getElementById("07cheeseprice").textContent;
-    }
-
-
-
-    function grandtotal(){
+      function grandtotal(){
         var a,b,c,d,e,f,g,h,i,j,k;
         a=Number(document.getElementById("field3").value);
         b=Number(document.getElementById("field5").value);
@@ -422,15 +395,53 @@ window.onclick = function(event) {
         g=Number(document.getElementById("field15").value);
         h=Number(document.getElementById("field17").value);
         i=Number(document.getElementById("field19").value);
-        j=Number(document.getElementById("field21").value);       
-        k= a + b + c + d + e + f + g + h + i + j;
+        j=Number(document.getElementById("field21").value);
+        
+        k= a+b+c+d+e+f+g+h+i+j;
         document.getElementById("grandtotal1").innerHTML = k;
     }
 
+
+
+
+
+
+      function myFunction10() {
+        alert('Cheese Pizza added successfully to the cart')
+      document.getElementById("field22").value = document.getElementById("cheesepizza").textContent;
+      document.getElementById("field23").value = document.getElementById("cheeseprice").textContent;
+    }
+    function myFunction11() {
+      document.getElementById("field24").value = document.getElementById("margeritapizza").textContent;
+      document.getElementById("field25").value = document.getElementById("margeritaprice").textContent;
+    }
+    function myFunction12() {
+      document.getElementById("field26").value = document.getElementById("vegpizza").textContent;
+      document.getElementById("field27").value = document.getElementById("vegprice").textContent;
+    }
+    function myFunction13() {
+      document.getElementById("field28").value = document.getElementById("pastapizza").textContent;
+      document.getElementById("field29").value = document.getElementById("pastaprise").textContent;
+    }
+    function myFunction14() {
+      document.getElementById("field30").value = document.getElementById("07cheesepizza").textContent;
+      document.getElementById("field31").value = document.getElementById("07cheeseprice").textContent;
+    }
+    
+
+    function total(){
+        var l,m,n,o,p,q;
+        l=Number(document.getElementById("field23").value);
+        m=Number(document.getElementById("field25").value);
+        n=Number(document.getElementById("field27").value);
+        o=Number(document.getElementById("field29").value);
+        p=Number(document.getElementById("field31").value);
+            
+        q= l+m+n+o+p;
+        document.getElementById("grandtotalmob").innerHTML = q;
+    }
+
 </script>
-
-
-
 </html>
 
 

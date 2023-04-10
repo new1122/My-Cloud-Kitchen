@@ -166,10 +166,11 @@ table{
         background-color: rgb(94, 252, 199);
         position: fixed;
         width: 100%;
+        margin-bottom: 120px;
     }
     .mainlogo{
         margin-left: 7%;
-        position: absolute;
+        position: absolute; 
         height: 135%;
         width: 25%;
         margin-top: 2%;
@@ -218,8 +219,8 @@ table{
         color: rgb(55, 5, 235);
         font-weight: 600;
         font-family:cursive;
-        margin-top: 8%;
-        margin-left: 30%;
+        margin-top: 10%;
+        margin-left: 32%;
         position: absolute;
     }
     .nav1{
@@ -253,7 +254,7 @@ table{
         display: none;
     }
     .container{
-        margin-top: 10%;
+        position: absolute;
       height: 80%;
       width: 95%;
     }
@@ -347,7 +348,7 @@ table{
 
 @media screen and (max-width: 450px) {
     .container{
-        margin-top: 24%;
+        margin-top: 30%;
          width: 95%;
     }
     
