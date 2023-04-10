@@ -30,37 +30,78 @@
     </nav>
     
     <div class="nav3">
-       <img src="shop.png" class="shop" alt="">
+       <img src="shop.png" class="shop" id="myBtn" onclick="total()" alt="">
        
         <div class="number">Feel Free to contact us on :  +91 99999 99999</div>
     </ul>
     </div>
 </div>
 <!--  --------------------  ----------  For Desktop ----------  -----------------  -->
+
 <div class="container">
     <div class="maincont">
-       
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <table>
+            <th>
+              <tr>
+                <td>Name</td>
+                <td>Price</td>
+              </tr>
+            </th>
+            <tr class="rows">
+              <td><p><input type="text"  style="border:none; width:100%" id="field2" readonly></p></td>
+              <td> <p><input type="text" style="border:none; width:30%;" id="field3" readonly></p></td>
+          </tr>
+          <tr class="rows">
+            <td><p><input type="text"  style="border:none; width:100%" id="field4" readonly></p></td>
+            <td> <p><input type="text" style="border:none; width:30%;" id="field5" readonly></p></td>
+        </tr>
+        <tr class="rows">
+          <td><p><input type="text"  style="border:none; width:100%" id="field6" readonly></p></td>
+          <td> <p><input type="text" style="border:none; width:30%;" id="field7" readonly></p></td>
+      </tr>
+      <tr class="rows">
+        <td><p><input type="text"  style="border:none; width:100%" id="field8" readonly></p></td>
+        <td> <p><input type="text" style="border:none; width:30%;" id="field9" readonly></p></td>
+    </tr>
+    <tr class="rows">
+      <td><p><input type="text"  style="border:none; width:100%" id="field10" readonly></p></td>
+      <td> <p><input type="text" style="border:none; width:30%;" id="field11" readonly></p></td>
+  </tr>
+
+           <td>Grand Total</td>
+            <td><p id="grandtotal1"></p></td>
+          </table>
+        </div>
+      
+      </div>
+
+
         <div class="lable1">PIZZA SECTION</div>
 
         <div class="box1">
             <img src="pizza1.jpg" class="img1" alt="">Italian Pizza <br> Pizza Base, Onion, <br> Capsicum, Cheese, etc.
-            &nbsp; &nbsp; &nbsp; <button onclick="myFunction()" class="mybutton">Eat it</button>
+            &nbsp; &nbsp; &nbsp; <button onclick="myFunction10()" class="mybutton">Eat it</button>
         </div>
         <div class="box1">
               <img src="pizza2.jpg" class="img1" alt="">Jain Pizza <br> Pizza Base,  <br> Capsicum, Cheese, etc.
-            &nbsp; &nbsp; &nbsp; <button onclick="myFunction()" class="mybutton">Eat it</button>
+            &nbsp; &nbsp; &nbsp; <button onclick="myFunction11()" class="mybutton">Eat it</button>
         </div>
         <div class="box1">
             <img src="pizza3.jpg" class="img1" alt="">Margerita Pizza <br> Pizza Base, Onion, <br> Capsicum, Cheese, etc.
-            &nbsp; &nbsp; &nbsp; <button onclick="myFunction()" class="mybutton">Eat it</button>
+            &nbsp; &nbsp; &nbsp; <button onclick="myFunction12()" class="mybutton">Eat it</button>
         </div>
         <div class="box1">
             <img src="pizza4.jpg" class="img1" alt="">07 Cheese Pizza <br> Pizza Base, Onion, <br> Capsicum, Cheese, etc.
-            &nbsp; &nbsp; &nbsp; <button onclick="myFunction()" class="mybutton">Eat it</button>
+            &nbsp; &nbsp; &nbsp; <button onclick="myFunction13()" class="mybutton">Eat it</button>
         </div>
         <div class="box1">
             <img src="pizza1.jpg" class="img1" alt="">veg. Pizza <br> Pizza Base, Onion, <br> Capsicum, Cheese, etc.
-            &nbsp; &nbsp; &nbsp; <button onclick="myFunction()" class="mybutton">Eat it</button>
+            &nbsp; &nbsp; &nbsp; <button onclick="myFunction14()" class="mybutton">Eat it</button>
         </div>
 
         <div class="lable1">DOSA SECTION</div>
@@ -88,6 +129,8 @@
         <div class="box1">E</div>
     </div>
 
+
+    <!-- DESKTOP VIEW -->
     
     <div class="box">
     <p class="lable"><u> Pizza</u></p>  
@@ -247,7 +290,6 @@
 
 
 
-   <!--  ------------------    For Mobile --------------------       -->
    
 
 <div class="footer">
@@ -263,6 +305,39 @@
 </body>
 
 <script>
+
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
     function myFunction() {
       document.getElementById("field2").value = document.getElementById("cheesepizza").textContent;
       document.getElementById("field3").value = document.getElementById("cheeseprice").textContent;
@@ -307,6 +382,35 @@
         document.getElementById("field20").value = document.getElementById("gdosa").textContent;
         document.getElementById("field21").value = document.getElementById("gdosaprice").textContent;
       }
+
+
+
+
+
+
+      function myFunction10() {
+      document.getElementById("field2").value = document.getElementById("cheesepizza").textContent;
+      document.getElementById("field3").value = document.getElementById("cheeseprice").textContent;
+    }
+    function myFunction11() {
+      document.getElementById("field4").value = document.getElementById("margeritapizza").textContent;
+      document.getElementById("field5").value = document.getElementById("margeritaprice").textContent;
+    }
+    function myFunction12() {
+      document.getElementById("field6").value = document.getElementById("vegpizza").textContent;
+      document.getElementById("field7").value = document.getElementById("vegprice").textContent;
+    }
+    function myFunction13() {
+      document.getElementById("field8").value = document.getElementById("pastapizza").textContent;
+      document.getElementById("field9").value = document.getElementById("pastaprise").textContent;
+    }
+    function myFunction14() {
+      document.getElementById("field10").value = document.getElementById("07cheesepizza").textContent;
+      document.getElementById("field11").value = document.getElementById("07cheeseprice").textContent;
+    }
+
+
+
     function grandtotal(){
         var a,b,c,d,e,f,g,h,i,j,k;
         a=Number(document.getElementById("field3").value);
@@ -322,8 +426,13 @@
         k= a + b + c + d + e + f + g + h + i + j;
         document.getElementById("grandtotal1").innerHTML = k;
     }
+
 </script>
 
 
 
 </html>
+
+
+
+
