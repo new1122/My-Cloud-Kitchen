@@ -145,6 +145,12 @@ table{
 #billbox{
     display: none;
 }
+#qrcode{
+    display: none;
+}
+#final{
+    display:none;
+}
 
 
 
@@ -254,6 +260,7 @@ table{
         display: none;
     }
     .container{
+        margin-top: 18%;
         position: absolute;
       height: 80%;
       width: 95%;
@@ -272,10 +279,12 @@ table{
     }
     
     .mybutton{
-        height: 25px;
-        width: 50px;
+        position: absolute;
+        right: 5%;
+        height: 28px;
+        width: 17%;
         margin-top: 30px;
-        margin-bottom: 0px;
+        
     }
     
     #billingbox{
@@ -342,6 +351,12 @@ table{
         text-decoration: none;
         cursor: pointer;
       }
+      #qrcode{
+        display:none;
+    }
+    #final{
+        display:none;
+    }
 
 }
 

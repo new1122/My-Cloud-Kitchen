@@ -36,7 +36,7 @@
     </ul>
     </div>
 </div>
-<!--  --------------------  ----------  For Desktop ----------  -----------------  -->
+<!--  --------------------  ----------  For Mobile View ----------  -----------------  -->
 
 <div class="container">
     <div class="maincont">
@@ -95,12 +95,19 @@
           <td>
             <input type="text" placeholder="Enter your name">
           </td>
-        </tr>
+      </tr>
         <tr><td style="color: white;">___</td></tr>
-        <tr><td style="color: white;">___</td></tr>
-        <tr>
-          <td colspan="2"><button>Get to the Payment</button></td>
+         <!--  <tr><td style="color: white;">___</td></tr>
+        <tr> -->
+          <td colspan="2"><button onclick="qrscan()" onclick="finalsub()">Get to the Payment</button></td>
         </tr>
+        <tr id="qrcode">
+          <td colspan="2"><img src="try.jpeg" alt=""></td>
+        </tr>
+        <tr id="final">
+          <td colspan="2"><button onclick="complete()">Payment Done</button></td>
+        </tr>
+
   </table>
         </div>
       
@@ -110,7 +117,7 @@
         <div class="lable1">PIZZA SECTION</div>
 
         <div class="box1">
-            <img src="pizza1.jpg" class="img1" alt="">Italian Pizza <br> Pizza Base, Onion, <br> Capsicum, Cheese, etc.
+            <img src="pizza1.jpg" class="img1"  alt="">Italian Pizza <br> Pizza Base, Onion, <br> Capsicum, Cheese, etc.
             &nbsp; &nbsp; &nbsp; <button onclick="myFunction10()" class="mybutton">Eat it</button>
         </div>
         <div class="box1">
@@ -358,20 +365,33 @@ window.onclick = function(event) {
   }
 }
 
+      // var x = document.getElementById("field2")
+      // var x1 = document.getElementById("field3")
 
+      // if (x.value.length == 0, p.value.length == 0){
+      //   y = document.getElementById("margeritapizza").textContent
+      //   x.value = y;
+      //   y1 = document.getElementById("margeritaprice").textContent
+      //   p.value = y1;
+      // }
+      // else{
+      //   document.getElementById("field4").value = document.getElementById("margeritapizza").textContent;
+      //   document.getElementById("field5").value = document.getElementById("margeritaprice").textContent;
+      // }
 
 
 
 
 
     function myFunction() {
+      
       document.getElementById("field2").value = document.getElementById("cheesepizza").textContent;
       document.getElementById("field3").value = document.getElementById("cheeseprice").textContent;
     }
     function myFunction1() {
-      document.getElementById("field4").value = document.getElementById("margeritapizza").textContent;
-      document.getElementById("field5").value = document.getElementById("margeritaprice").textContent;
-    }
+        document.getElementById("field4").value = document.getElementById("margeritapizza").textContent;
+        document.getElementById("field5").value = document.getElementById("margeritaprice").textContent;
+     }
     function myFunction2() {
       document.getElementById("field6").value = document.getElementById("vegpizza").textContent;
       document.getElementById("field7").value = document.getElementById("vegprice").textContent;
@@ -425,9 +445,22 @@ window.onclick = function(event) {
         document.getElementById("grandtotal1").innerHTML = k;
     }
 
+function qrscan(){
+  var img = document.getElementById('qrcode');
+    img.style.display = 'contents';
 
-
-
+    var img2 = document.getElementById('final');
+    img2.style.display = 'contents';
+    }
+  function complete(){
+    Swal.fire({
+           position: 'top-end',
+           icon: 'success',
+           title: 'Thank You for the Order !!!, We will call you once when the Order is Prepared',
+           showConfirmButton: false,
+           timer: 3200
+  })
+}
 
 
       function myFunction10() {
@@ -438,6 +471,7 @@ window.onclick = function(event) {
            showConfirmButton: false,
            timer: 1200
 })
+
       document.getElementById("field22").value = document.getElementById("cheesepizza").textContent;
       document.getElementById("field23").value = document.getElementById("cheeseprice").textContent;
     }
@@ -498,6 +532,9 @@ window.onclick = function(event) {
         q= l+m+n+o+p;
         document.getElementById("grandtotalmob").innerHTML = q;
     }
+function payment(){
+  widow.location.href = "https://www.google.com/"
+}
 
 </script>
 <script>
